@@ -1,10 +1,23 @@
-# <project-name>
+# py-versionify
 
-<!-- A brief description of the project. -->
+A Python module to manage versions following [semver](https://semver.org/).
 
 ## Usage
 
-<!-- Provide instructions on how to use the project, including code examples if applicable. -->
+```python
+from versionify import Version
+
+version = Version("1.0.0")
+version = version.bump_major()
+version = version.bump_minor()
+version = version.bump_patch()
+
+print(version)
+# Output: 2.1.1
+
+# Comparisons
+Version("1.0.0") < Version("2.0.0")
+```
 
 ## Contributing
 

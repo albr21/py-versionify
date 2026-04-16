@@ -1,7 +1,9 @@
-name: <project-name>
+name: py-versionify
 description: |-
-  <project-description>
-version: 0.0.0
+  A Python module to manage versions following semver
+version: 1.0.0
 changes: |-
+  [1.0.0]
+    * Initial release
   [0.0.0]
     * Under development
