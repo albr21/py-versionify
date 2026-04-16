@@ -1,0 +1,13 @@
+[project]
+name = "versionify"
+version = "1.0.0"
+description = "A Python module to manage versions following semver."
+authors = [{ name = "albr21" }]
+dependencies = []
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
