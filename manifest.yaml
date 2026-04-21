@@ -1,6 +1,6 @@
 name: py-versionify
 description: |-
-  A Python module to manage versions following semver
+  A Python module to manage version following semver
 version: 1.0.0
 releases:
   - version: 1.0.0
