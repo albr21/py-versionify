@@ -1,6 +1,6 @@
 name: 🤖 Python Quality
 
-run-name: 🤖 Python Quality (Triggered by ${{ github.actor }})
+run-name: 🤖 Python Quality
 
 on:
   workflow_dispatch:
@@ -17,5 +17,6 @@ concurrency:
 
 jobs:
   quality:
+    name: Python Quality
     uses: albr21/gha-reusable-workflows/.github/workflows/reusable-python-quality.yml@main
     secrets: inherit
