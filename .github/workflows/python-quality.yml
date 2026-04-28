@@ -1,5 +1,7 @@
 name: 🤖 Python Quality
 
+run-name: 🤖 Python Quality (Triggered by ${{ github.actor }})
+
 on:
   workflow_dispatch:
   push:
