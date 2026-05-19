@@ -44,12 +44,12 @@ class Version:
         if not isinstance(other, Version):
             raise TypeError(f"Cannot compare Version with {type(other)}")
         return self._cmp_key() < other._cmp_key()
-    
+
     def __prerelease_key(self) -> tuple:
         if self.prerelease is None:
             return (1,)
         return (0, self.__split_prerelease(self.prerelease))
-    
+
     def __split_prerelease(self, prerelease: str) -> tuple:
         parts = []
         for ident in prerelease.split("."):
